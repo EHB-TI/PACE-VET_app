@@ -38,3 +38,11 @@ For Android:
 ```shell
 flutter build apk --dart-define=APP_ENV=production
 ```
+For Android:
+```shell
+ flutter build appbundle --release --dart-define=API_URL=https://pace-vet.fly.dev/  
+```
+For iOS:
+```shell
+ flutter build ios --release --dart-define=API_URL=https://pace-vet.fly.dev/     
+```
