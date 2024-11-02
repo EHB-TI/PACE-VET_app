@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
+import 'package:pace_vet/features/portfolio/cubit/attachment/attachment_cubit.dart';
+import 'package:pace_vet/features/portfolio/cubit/experience/experience_cubit.dart';
+import 'package:pace_vet/features/portfolio/cubit/overview/portfolio_cubit.dart';
+import 'package:pace_vet/features/portfolio/screens/create_attachment_screen.dart';
+import 'package:pace_vet/features/portfolio/screens/create_experience_screen.dart';
+import 'package:pace_vet/features/portfolio/screens/edit_attachment_screen.dart';
+import 'package:pace_vet/features/portfolio/screens/attachment_screen.dart';
+import 'package:pace_vet/features/portfolio/screens/edit_experience_screen.dart';
+import 'package:pace_vet/features/portfolio/screens/experience_screen.dart';
+import 'package:pace_vet/features/portfolio/screens/portfolio_overview_screen.dart';
+import 'package:pace_vet_api/pace_vet_api.dart';
+
+part 'routes.g.dart';
+part 'routing/portfolio_overview_route.dart';
+part 'routing/experience_route.dart';
+part 'routing/attachment_route.dart';
+part 'routing/edit_attachment_route.dart';
+part 'routing/edit_experience_route.dart';
+part 'routing/create_experience_route.dart';
+part 'routing/create_attachment_route.dart';

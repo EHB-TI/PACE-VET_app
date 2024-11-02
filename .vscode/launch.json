@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "pace_vet",
+            "request": "launch",
+            "type": "dart",
+            "cwd": "./application",
+            "args": [
+                "--dart-define-from-file", "../.env"
+            ]
+        },
+        {
+            "name": "pace_vet (Web)",
+            "request": "launch",
+            "type": "dart",
+            "cwd": "./application",
+            "deviceId": "chrome",
+            "args": [
+                "--dart-define-from-file", "../.env"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
+import 'package:pace_vet/features/assessments/cubit/assessment/assessment_cubit.dart';
+import 'package:pace_vet/features/assessments/cubit/assessments/assessments_cubit.dart';
+import 'package:pace_vet/features/assessments/cubit/review/review_cubit.dart';
+import 'package:pace_vet/features/assessments/screens/assessment_screen.dart';
+import 'package:pace_vet/features/assessments/screens/assessments_overview_screen.dart';
+import 'package:pace_vet/features/assessments/screens/create_assessment_screen.dart';
+import 'package:pace_vet/features/assessments/screens/review_screen.dart';
+import 'package:pace_vet/features/auth/bloc/auth/auth_bloc.dart';
+import 'package:pace_vet/features/portfolio/cubit/overview/portfolio_cubit.dart';
+import 'package:pace_vet/features/portfolio/screens/portfolio_overview_screen.dart';
+import 'package:pace_vet_api/pace_vet_api.dart';
+
+part 'routes.g.dart';
+part 'routing/assessments_overview_route.dart';
+part 'routing/assessment_route.dart';
+part 'routing/create_assessment_route.dart';
+part 'routing/preview_competence_route.dart';
+part 'routing/review_route.dart';
