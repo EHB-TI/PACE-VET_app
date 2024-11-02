@@ -23,7 +23,7 @@ void main() {
 @Openapi(
   additionalProperties: DioProperties(
     pubName: 'pace_vet_api',
-    pubAuthor: 'Wannes Gennar',
+    pubAuthor: 'Wannes Gennar, Johan van den Broek',
     nullableFields: true,
   ),
   inputSpec: RemoteSpec(
