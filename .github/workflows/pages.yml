@@ -33,7 +33,9 @@ jobs:
           channel: stable
       - run: flutter config --enable-web
       - run: echo '{"API_URL":"https://pace-vet.fly.dev/"}' > .env
-      - run: flutter build web --base-href=/PACE-VET/ --dart-define=API_URL=https://pace-vet.fly.dev/ --optimization-level=4 --csp
+      - run: echo '{"API_URL":"https://pace-vet.fly.dev/"}' > ../.env
+      - run: pwd
+      - run: flutter build web --base-href=/PACE-VET/ --dart-define-from-file=../.env --optimization-level=4 --csp
         working-directory: application
       - name: Setup Pages
         uses: actions/configure-pages@v4
