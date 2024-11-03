@@ -83,7 +83,6 @@ flutter:
     - images/unsplash-pace-vet.jpg
     - images/unsplash-creative.jpg
     - images/no-image.jpg
-    - .env
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
