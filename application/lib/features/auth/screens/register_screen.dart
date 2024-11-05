@@ -325,7 +325,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               onPressed: () {
                 if (_form.currentState?.validate() ?? false) {
                   context.read<RegistrationCubit>().register(
-                        UserType.candidate,
+                        _type ?? UserType.candidate,
                         _firstName.text,
                         _lastName.text,
                         _email.text,
