@@ -50,7 +50,7 @@ class ReviewCubit extends Cubit<ReviewCubitState> with ContextualLogger {
 
   Future update(Review review, ReviewState state, String comment) async {
     emit(const ReviewLoadingState());
-    final experiences = (state as ReviewLoadedState).experiences;
+    // final experiences = (state as ReviewLoadedState).experiences;
 
     try {
       final request = UpdateReviewRequestBuilder()
@@ -82,7 +82,7 @@ class ReviewCubit extends Cubit<ReviewCubitState> with ContextualLogger {
       emit(ReviewUpdateFailedState(
         validation: validation,
         review: review,
-        experiences: experiences,
+        experiences: [],
       ));
     }
   }
