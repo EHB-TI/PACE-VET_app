@@ -72,6 +72,8 @@ In order for the app to access the internet, especially in **release builds**, e
 
 The `<uses-permission android:name="android.permission.INTERNET"/>` line is necessary for network access in release builds. While internet permission is often automatically granted in debug builds, it must be explicitly declared for the app to access the internet in release mode.
 
+Here's the content in Markdown format, ready for copy-pasting into a `README.md` file:
+
 ### Custom Android Configuration
 
 The following configurations in `android/app/build.gradle` are specific to this project and may require adjustments based on your environment and needs:
@@ -85,29 +87,51 @@ The following configurations in `android/app/build.gradle` are specific to this 
        id "kotlin-android"
        id "dev.flutter.flutter-gradle-plugin"
    }
-android {
-    namespace "be.ehb.pace_vet"
-}
-compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
-}
-signingConfigs {
-    release {
-        keyAlias 'key'
-        keyPassword 'your_password'
-        storeFile file('/path/to/your/key.jks')
-        storePassword 'your_password'
-    }
-    debug {
-        keyAlias 'key'
-        keyPassword 'your_password'
-        storeFile file('/path/to/your/key.jks')
-        storePassword 'your_password'
-    }
-}
-dependencies {
-    implementation 'com.google.errorprone:error_prone_annotations:2.7.1'
-    implementation 'javax.annotation:javax.annotation-api:1.3.2'
-}
+   ```
+
+2. **Namespace**:
+   - Custom namespace is defined for the app:
+   ```groovy
+   android {
+       namespace "be.ehb.pace_vet"
+   }
+   ```
+
+3. **Java Compatibility Options**:
+   - Java compatibility versions are set to Java 1.8:
+   ```groovy
+   compileOptions {
+       sourceCompatibility JavaVersion.VERSION_1_8
+       targetCompatibility JavaVersion.VERSION_1_8
+   }
+   ```
+
+4. **Signing Configurations**:
+   - Custom signing configurations are set for both `release` and `debug` builds.
+   - **Note**: Replace `'your_password'` and `/path/to/your/key.jks` with your actual keystore details. Be cautious not to expose sensitive information in version control.
+   ```groovy
+   signingConfigs {
+       release {
+           keyAlias 'key'
+           keyPassword 'your_password'
+           storeFile file('/path/to/your/key.jks')
+           storePassword 'your_password'
+       }
+       debug {
+           keyAlias 'key'
+           keyPassword 'your_password'
+           storeFile file('/path/to/your/key.jks')
+           storePassword 'your_password'
+       }
+   }
+   ```
+
+5. **Dependencies**:
+   - The following additional dependencies are included:
+   ```groovy
+   dependencies {
+       implementation 'com.google.errorprone:error_prone_annotations:2.7.1'
+       implementation 'javax.annotation:javax.annotation-api:1.3.2'
+   }
+   ```
 ```
