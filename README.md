@@ -47,9 +47,7 @@ For iOS:
  flutter build ios --release --dart-define=API_URL=https://pace-vet.fly.dev/     
 ```
 
-Here’s the README snippet in Markdown format:
 
-```markdown
 ### Setting Up Internet Permission for Release Builds
 
 In order for the app to access the internet, especially in **release builds**, ensure that the `INTERNET` permission is added to your `AndroidManifest.xml` file.
@@ -74,5 +72,3 @@ In order for the app to access the internet, especially in **release builds**, e
 
 The `<uses-permission android:name="android.permission.INTERNET"/>` line is necessary for network access in release builds. While internet permission is often automatically granted in debug builds, it must be explicitly declared for the app to access the internet in release mode.
 ```
-
-This is ready for direct copy-pasting into a `README.md` file in Markdown format.
