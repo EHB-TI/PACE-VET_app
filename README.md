@@ -72,7 +72,6 @@ In order for the app to access the internet, especially in **release builds**, e
 
 The `<uses-permission android:name="android.permission.INTERNET"/>` line is necessary for network access in release builds. While internet permission is often automatically granted in debug builds, it must be explicitly declared for the app to access the internet in release mode.
 
-Here's the content in Markdown format, ready for copy-pasting into a `README.md` file:
 
 ### Custom Android Configuration
 
